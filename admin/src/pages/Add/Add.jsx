@@ -13,7 +13,7 @@ const Add = () => {
     description: "",
     price: "",
     category: "Fruits",
-    subcategory: "Import", // Perbaikan di sini
+    subcategory: "Import",
   });
 
   const onChangeHandler = (event) => {
@@ -26,22 +26,22 @@ const Add = () => {
     event.preventDefault();
     const formData = new FormData();
     formData.append("name", data.name);
-    formData.append("brand", data.brand);
+    formData.append("brand",data.brand);
     formData.append("description", data.description);
     formData.append("price", Number(data.price));
     formData.append("category", data.category);
-    formData.append("subcategory", data.subcategory); // Perbaikan di sini
+    formData.append("subcategory",data.subcategory)
     formData.append("image", image);
 
     const response = await axios.post(`${url}/api/food/add`, formData);
     if (response.data.success) {
       setData({
         name: "",
-        brand: "",
+        brand:"",
         description: "",
         price: "",
         category: "Fruits",
-        subcategory: "Import",
+        subcategory:"Import"
       });
       setImage(false);
       toast.success(response.data.message);
@@ -105,8 +105,10 @@ const Add = () => {
             <p>Product category</p>
             <select onChange={onChangeHandler} name="category" value={data.category}>
               <option value="Fruits">Fruits</option>
-              <option value="Vegetables">Vegetables</option>
-              <option value="Daily & Milk">Daily & Milk</option>
+              <option value="Vegetable">Vegetable </option>
+              <option value="Dairy and Milk">Dairy and Milk</option>
+              <option value="Grains">Grains</option>
+              <option value="Seafood">Seafood</option>
               <option value="Meat">Meat</option>
             </select>
           </div>

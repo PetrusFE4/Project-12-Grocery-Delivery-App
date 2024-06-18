@@ -54,10 +54,10 @@ const List = () => {
         {list.map((item, index) => (
           <div key={index} className='list-table-row'>
             <img src={`${url}/images/${item.image}`} alt={item.name} className="food-image" />
-            <p>{item.name}</p>
-            <p>{item.brand}</p>
+            <p>{item.name}</p> 
+            <p>{item.brand}</p> 
             <p>{item.category}</p>
-            <p>{item.subcategory || 'N/A'}</p> {/* Check for undefined */}
+            <p>{item.subcategory}</p>
             <p>{item.price}</p>
             <p onClick={() => removeFood(item._id)} className='cursor remove-action'>X</p>
           </div>

@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-content-left">
             <img src={assets.logo} alt="" />
-            <p>Our Fresh Product</p>
-            <div className="footer-social-icons">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste sunt rerum nemo dignissimos reiciendis delectus impedit atque in obcaecati iure, mollitia ratione? Inventore voluptas ullam voluptates rerum suscipit molestias perferendis.</p>
+            <div className="footer-social-icon">
                 <img src={assets.facebook_icon} alt="" />
                 <img src={assets.twitter_icon} alt="" />
                 <img src={assets.linkedin_icon} alt="" />
@@ -19,23 +19,21 @@ const Footer = () => {
             <h2>Company</h2>
             <ul>
                 <li>Home</li>
-                <li>About Us</li>
+                <li>About us</li>
                 <li>Delivery</li>
-                <li>privacy Policy</li>
+                <li>Privacy policy</li>
             </ul>
         </div>
         <div className="footer-content-right">
             <h2>GET IN TOUCH</h2>
             <ul>
-                <li>+1-212-456-7890</li>
-                <li>grocerry.deliverry.app@admin.dev</li>
+                <li>+62 123-456-7890</li>
+                <li>grocerrydeliverryapps@dev.com</li>
             </ul>
-        </div> 
+        </div>
       </div>
       <hr />
-      <p className="footer-copyright">
-        Copyright 2024 @ GrocerryDeliverryApps.com - All Right Reserved
-      </p>
+      <p className="footer-copyright">Copyright 2024 @ dev.com - All Right Reserved.</p>
     </div>
   )
 }

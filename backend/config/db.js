@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
 
-export const connectDB = async () =>{
-    await mongoose.connect('mongodb+srv://grocerry-deliverry-apps:grocerrydeliverryapps@cluster0.gcams9o.mongodb.net/Grocerry-Deliverry-Apps').then(()=>console.log("DB Connected"));
+export const connectDB = async () => {
+    await mongoose.connect('mongodb+srv://grocerrydeliverryapps:250203@cluster0.mtzyvpt.mongodb.net/grocerry-apps').then(()=>console.log("DB Connected"));
 }

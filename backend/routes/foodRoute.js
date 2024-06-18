@@ -1,13 +1,13 @@
-import express from "express"
-import { addFood,listFood,removeFood } from "../controllers/foodController.js"
-import multer from "multer"
+import express from 'express'
+import { addFood, listFood, removeFood } from '../controllers/foodController.js'
+import multer from 'multer'
 
-const foodRouter = express.Router()
+const foodRouter = express.Router();
 
-// image storage engine
+// Image Storage Engine
 
 const storage = multer.diskStorage({
-    destination: "uploads",
+    destination:"uploads",
     filename:(req,file,cb)=>{
         return cb(null,`${Date.now()}${file.originalname}`)
     }
